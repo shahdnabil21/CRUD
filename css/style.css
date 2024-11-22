@@ -1,0 +1,98 @@
+body {
+    background-color: #f7ecde;
+}
+::selection {
+    background-color: #fec260;
+    color: #f7ecde;
+}
+h2 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: -1;
+    height: 20px;
+    width: 72%;
+    text-align: center;
+    background-color: #fec260;
+    transition: 0.4s;
+}
+
+h2:hover::before {
+    height: 38px;
+}
+
+hr {
+    border: dashed rgb(0, 0, 0) 1px;
+    margin-top: 60px;
+}
+h4 {
+    font-family: "Righteous", sans-serif;
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(1,87,41,1) 0%, rgba(36,139,97,1) 25%, rgba(160,180,63,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+.font{
+    font-family: "PT Sans Caption", sans-serif;
+}
+.submit button{
+    left: 50%;
+    top: 30px;
+}
+.btn-style{
+    background-color: #d1512d;
+    color: white;
+}
+.btn:hover.btn-style{
+    background-color: #f55f35;
+    color: white;
+}
+.form hr{
+    margin-top: 90px;
+}
+.btn-visit{
+    background-color: #9eb23b;
+    color: white;
+}
+.btn.btn:hover.btn-visit{
+    background-color: #7e911e;
+    color: white;
+}
+.light-box{
+    background-color: rgba(0, 0, 0, 0.532);
+}
+.innerbox{
+    width: 33%;
+    height: 35vh;
+    background-color: white;
+}
+#red{
+    color: #f15f5d;
+}
+#yellow{
+    color: #febe2e;
+}
+#green{
+    color: #4db748;
+}
+.item h4{
+    font-family: "Bree Serif", serif;
+    color: black;
+}
+.color{
+    color: #bb4444;
+}
+#closeiteam{
+    cursor: pointer;
+}
+.form-control:focus{
+   border-color: #fec260;
+   box-shadow: 0 0 0 .25rem #e8b15984;
+}
